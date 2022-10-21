@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  apache:
+    image: httpd:2.4
+    ports:
+      - 80:80
+    volumes:
+      - ./html:/usr/local/apache2/htdocs/
+    container_name: apache-app  
+    environment:
+      - APACHE_LOG_DIR=/var/log/apache2
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    networks:
+      - mynet
