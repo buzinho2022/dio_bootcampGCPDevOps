@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+# Variaveis para uso
+
+sudo cat << EOT >> /home/vagrant/.ssh/authorized_keys
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWkRjuzO3NNvcJJquiaIAD0oK1G5A2ATb74svUoFru5f5mRRYv0JpnVk0qB5Y8fDk0PrMNKO/XqHl0jR5Q2rNJni+ODQiag2PFI14aZ2aUXbXUdrgud7gxpXhg5FouEkX6YT+8LjZVYjWc8GuRp6g3VL4A95p1NqBkesR0v6Xg7g/mLFmTh7ox+GqmPkjqbOfcIShk0Nq+eesdkc+359cOBEJSdHALguF2+jkOOJG7Vs8v1coPLKzehQt6f96YQNYAs8PlU9G8Zgtz6Z/vprPOlEWiXV8RWsKPWtKHBt9GxM1krKkGRaH1x+qgc1UP0yajEgOs4UntdIEoHR6ktmCl vagrant@control-node.localdomain
+EOF
